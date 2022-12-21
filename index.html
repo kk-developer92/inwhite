@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>INWITE</title>
+
+    <link href="libs/fonts/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link href="libs/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="libs/jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
+    <link href="libs/fancybox/jquery.fancybox.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--Шапка-->
+<header id="header">
+    <div class="container">
+        <!--Логотип-->
+        <div id="logo" class="col-xs-12 col-sm-12 col-md-4">
+            <a href="#">
+                <img src="images/logo.png" width="167" height="61" alt="">
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-8">
+            <div id="header_right" class="row">
+                <div class="header-phone col-xs-12 col-sm-6">
+                    <a href="tel:12345678911">
+                        <i class="icon icon-phone"></i>1 234 <b>567-89-10</b>,
+                    </a>
+                    <a href="tel:12345678911">1 234 <b>567-89-11</b>
+                    </a>
+                </div>
+                <div class="header-links col-xs-12 col-sm-6">
+                    <div class="row">
+                        <div class="header-mail col-xs-6">
+                            <a href="mailto:info@magazin.com">
+                                <i class="icon icon-mail"></i>info@magazin.com
+                            </a>
+                        </div>
+                        <div class="header-cart col-xs-6">
+                            <a href="cart.html">
+                                <i class="icon icon-cart"></i>Моя корзина
+                            </a>
+                            <span>(1)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar top-menu" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Главная</a></li>
+                    <li class="active"><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about-us.html">О компании</a></li>
+                    <li><a href="page.html">Доставка</a></li>
+                    <li><a href="page.html">Оплата</a></li>
+                    <li><a href="page.html">F.A.Q.</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<!--Слайдер-->
+<section id="slider">
+    <!--Bx-Слайдер на больших экранах-->
+    <div class="slider-inner container hidden-xs hidden-sm">
+        <ul>
+            <li>
+                <img class="img-responsive" src="images/data/slider/slide_01.jpg" alt="">
+                <div class="slide-desc">
+                    <div class="slide-type">специальное предложение</div>
+                    <div class="desc-text">
+                        <a href="#">Халат женский , французский воротник, карман IPAD 107, 40-50р.</a>
+                    </div>
+                    <div class="price">
+                        <span>2 290</span> р.
+                    </div>
+                    <a class="btn inwite-btn" href="#">купить <i class="fa fa-angle-right"></i></a>
+                </div>
+            </li>
+            <li>
+                <img class="img-responsive" src="images/data/slider/slide_01.jpg" alt="">
+                <div class="slide-desc">
+                    <div class="slide-type">специальное предложение</div>
+                    <div class="desc-text">
+                        <a href="#">Халат мужской, французский воротник, карман IPAD 107, 40-50р.</a>
+                    </div>
+                    <div class="price">
+                        <span>2 290</span> р.
+                    </div>
+                    <a class="btn inwite-btn" href="#">купить <i class="fa fa-angle-right"></i></a>
+                </div>
+            </li>
+            <li>
+                <img class="img-responsive" src="images/data/slider/slide_01.jpg" alt="">
+                <div class="slide-desc">
+                    <div class="slide-type">специальное предложение</div>
+                    <div class="desc-text">
+                        <a href="#">Халат мужской, французский воротник, карман IPAD 107, 40-50р.</a>
+                    </div>
+                    <div class="price">
+                        <span>2 290</span> р.
+                    </div>
+                    <a class="btn inwite-btn" href="#">купить <i class="fa fa-angle-right"></i></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--Конец Bx-Слайдера-->
+    <!--Банер на маллых экранах-->
+    <div class="container wrap-image visible-xs visible-sm">
+        <img class="img-responsive" src="images/data/slider/default_img.jpg" alt="">
+        <div class="slide-desc">
+            <div class="desc-text">
+                Профессиональная медицинская одежда от бренда INWHITE
+            </div>
+            <a class="btn inwite-btn hidden-sm" href="#">к каталогу <i class="fa fa-angle-right"></i></a>
+            <a class="btn inwite-btn hidden-xs" href="#">Перейти к каталогу <i class="fa fa-angle-right"></i></a>
+        </div>
+    </div>
+    <!--Конец банера-->
+</section>
+<!--Меню каталога-->
+<div id="catalog-menu" class="home">
+    <div class="container">
+        <nav class="navbar">
+            <ul class="nav navbar-nav">
+                <li class="xajiatu">
+                    <a href="category.html">
+                        <figure>
+                            <img src="images/data/catalog_menu/catalog_img_01.png" alt="">
+                        </figure>
+                        <span>Халаты</span>
+                    </a>
+                </li>
+                <li class="kyptku">
+                    <a href="category.html">
+                        <figure>
+                            <img src="images/data/catalog_menu/catalog_img_02.png" alt="">
+                        </figure>
+                        <span>Куртки</span>
+                    </a>
+                </li>
+                <li class="bpyku">
+                    <a href="category.html">
+                        <figure>
+                            <img src="images/data/catalog_menu/catalog_img_03.png" alt="">
+                        </figure>
+                        <span>Брюки и юбки</span>
+                    </a>
+                </li>
+                <li class="ybopbi">
+                    <a href="category.html">
+                        <figure>
+                            <img src="images/data/catalog_menu/catalog_img_04.png" alt="">
+                        </figure>
+                        <span>Головные уборы</span>
+                    </a>
+                </li>
+                <li class="komnjiektu">
+                    <a href="category.html">
+                        <figure>
+                            <img src="images/data/catalog_menu/catalog_img_05.png" alt="">
+                        </figure>
+                        <span>Комплекты</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<!--Основной блок-->
+<main class="wrapper">
+    <div class="container">
+        <div class="row">
+            <!--Адаптивный блок article-->
+            <article id="content" class="col-xs-12 col-sm-12 col-md-9 col-md-push-3">
+                <h1>Медицинская одежда Inwhite</h1>
+                <p>Медицинская одежда торговой марки MedicalService существует на рынке спецодежды c 1993 года. Всем известно, что спрос рождает предложение, и следуя потребительскому спросу, мы выпускаем качественные и комфортные для работы медицинские халаты, хирургические костюмы и многое другое.</p>
+                <p>Как вы знаете, <a href="#">медицинские учреждения</a> периодически сталкиваются с проблемой внешнего вида, не идеальность которого отрицательно сказывается на моральном и психологическом состоянии сотрудников. Это снижает активность, которая является составными успеха. </p>
+                <!--скрываем длинный текст-->
+                <div class="hidden-box">
+                    <ul>
+                        <li>А также негативно отражается на уровне престижа учреждения.</li>
+                        <li>Наши услуги будут вам полезны в целях получения современного внешнего вида,</li>
+                        <li>Который необходим для эстетической организации рабочего процесса.</li>
+                    </ul>
+                    <h2>Медицинская одежда и качество материалов</h2>
+                    <p>Наша медицинская одежда позволит вам сэкономить средства, расходуемые вами на медицинскую одежду за счет увеличения срока службы, которое достигается с применением современных износоустойчивых тканей.</p>
+                    <p>Покупая другую дешевую и некачественную <a href="#">медицинскую одежду</a>, вы, к сожалению, проигрываете за счет регулярных покупок, быстро приходящей в негодность одежды. </p>
+                    <p>Мы предлагаем вам медицинскую одежду из современных текстильных материалов, которые обеспечивают сохранение свойств, размеров и внешнего вида в течение повышенного срока эксплуатации.</p>
+                    <p>В этой медицинской одежде вы будете чувствовать себя легко и комфортно за счет удобного покроя и модного дизайна. Медицинскому работнику стоит уделить внимание внешнему виду, так как это составная часть общего психологического и физиологического состояния.</p>
+                </div>
+                <!--Свернуть/Развернуть-->
+                <div class="spoiler_box hidden-md hidden-lg">
+                    <div class="shadow"></div>
+                    <a class="btn btn-spoiler" href="javascript:void(0)">Развернуть</a>
+                </div>
+            </article>
+            <!--Адаптивный блок aside-->
+            <aside id="sidebar" class="col-xs-12 col-sm-12 col-md-3 col-md-pull-9">
+                <!--Блок с новостями-->
+                <section class="news-mod">
+                    <hr class="side-line">
+                    <div class="h3">Наши новости</div>
+
+                    <ul class="nav navbar-nav">
+                        <li class="col-xs-12 col-sm-6 col-md-12">
+                            <div class="data">29 октября</div>
+                            <div class="mod-ttl">
+                                <a href="#">Наименование новости в одну или две, или большее число строк</a>
+                            </div>
+                        </li>
+                        <li class="col-xs-12 col-sm-6 col-md-12">
+                            <div class="data">15 октября</div>
+                            <div class="mod-ttl">
+                                <a href="#">Наименование новости в одну или две, или большее число строк</a>
+                            </div>
+                        </li>
+                        <li class="col-xs-12 col-sm-6 col-md-12">
+                            <div class="data">2 октября</div>
+                            <div class="mod-ttl">
+                                <a href="#">Наименование новости в одну или две, или большее число строк</a>
+                            </div>
+                        </li>
+                        <li class="col-xs-12 col-sm-6 col-md-12">
+                            <div class="data">30 сентября</div>
+                            <div class="mod-ttl">
+                                <a href="#">Наименование новости в одну или две, или большее число строк</a>
+                            </div>
+                        </li>
+                        <li class="col-xs-12 col-sm-6 col-md-12">
+                            <div class="data">15 сентября</div>
+                            <div class="mod-ttl">
+                                <a href="#">Наименование новости в одну или две, или большее число строк</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <a class="btn btn-red" href="#">все новости <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </section>
+                <!--Конец Блок с новостями-->
+            </aside>
+        </div>
+    </div>
+</main>
+<!--Блок информации-->
+<section id="content_bottom">
+    <div class="container">
+        <div class="row">
+            <div class="item col-xs-12 col-sm-4">
+                <i class="icon guarantee-quality"></i> <span>Гарантируем качество</span>
+            </div>
+            <div class="item col-xs-12 col-sm-4">
+                <i class="icon work-time"></i> <span>Мы работаем 24/7</span>
+            </div>
+            <div class="item col-xs-12 col-sm-4">
+                <i class="icon prof-status"></i> <span>мы — профессионалы</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Конец Блока информации-->
+<!--Футер-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-contacts col-xs-12 col-sm-4">
+                <!--Контакты в футере-->
+                <div class="footer-phone">
+                    <a href="tel:+1 234 567-89-10">+1 234 <b>567-89-10</b></a>,
+                    <a href="tel:+1 234 567-89-11">+1 234 <b>567-89-11</b></a>
+                </div>
+                <div class="footer-address">121351 Москва, ул. Коцюбинского, 4</div>
+                <a class="footer-mail" href="mailto:info@magazin.ru">info@magazin.ru</a>
+            </div>
+            <div class="footer-menu col-xs-12 col-sm-4">
+                <!--Меню в футере-->
+                    <ul class="row">
+                        <li class="col-xs-6 col-sm-12 col-md-6">
+                            <a href="#">О компании</a>
+                        </li>
+                        <li class="col-xs-6 col-sm-12 col-md-6">
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li class="col-xs-6 col-sm-12 col-md-6">
+                            <a href="#">Каталог</a>
+                        </li>
+                        <li class="col-xs-6 col-sm-12 col-md-6">
+                            <a href="#">Оплата</a>
+                        </li>
+                        <li class="col-xs-6 col-sm-12 col-md-6">
+                            <a href="#">Скачать прайс-лист</a>
+                        </li>
+                        <li class="col-xs-6 col-sm-12 col-md-6">
+                            <a href="#">F.A.Q.</a>
+                        </li>
+                    </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <div class="social_links">
+                    <a href="#"><img src="images/soc_icon_01.png" alt=""></a>
+                    <a href="#"><img src="images/soc_icon_02.png" alt=""></a>
+                    <a href="#"><img src="images/soc_icon_03.png" alt=""></a>
+                    <a href="#"><img src="images/soc_icon_04.png" alt=""></a>
+                    <a href="#"><img src="images/soc_icon_05.png" alt=""></a>
+                </div>
+                <div class="copyright">© Все права защищены. При копировании материалов с сайта ссылка на нас обязательна.</div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="libs/jquery/jquery-1.11.3.min.js"></script>
+<script src="libs/jquery/jquery-migrate-1.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="libs/jquery.equalheight/jquery.equalheight.js"></script>
+<script src="libs/jquery.bxslider/jquery.bxslider.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<!--Общий скрипт-->
+<script src="js/script.js"></script>
+</body>
+</html>
